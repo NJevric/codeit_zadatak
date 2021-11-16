@@ -1,0 +1,16 @@
+@mixin position-element($top, $left, $x, $y) {
+  position: absolute;
+
+  top: $top;
+  left: $left;
+
+  transform: translate($x, $y);
+}
+@mixin position-element-right($top, $right, $x, $y) {
+  position: absolute;
+
+  top: $top;
+  right: $right;
+
+  transform: translate($x, $y);
+}

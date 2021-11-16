@@ -1,0 +1,76 @@
+@import "_mixins";
+@import "header";
+@import "main";
+@import "footer";
+::selection {
+  background-color: cyan;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+h1 {
+  font-size: 70px;
+
+  font-weight: 900;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.wrapper {
+  width: 75%;
+  margin: 0px auto;
+}
+
+.button {
+  background-color: #000;
+  border-radius: 9px;
+}
+
+// h1-block
+.block {
+  @include position-element(55%, 12.5%, 0%, -50%);
+  width: 32%;
+
+  .block__desc {
+    font-size: 24px;
+    margin: 12px 0px 34px 0px;
+    font-weight: 500;
+  }
+  .block__button {
+    width: 250px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 29px 0px;
+    .block__button-link {
+      text-transform: uppercase;
+      color: #fff;
+      margin-right: 5px;
+    }
+    i {
+      font-size: 12px;
+    }
+  }
+}
+//   h2 block
+.h2__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 46px;
+  p {
+    margin-left: auto;
+    width: 35%;
+    font-size: 20x;
+  }
+}
