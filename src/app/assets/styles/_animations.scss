@@ -1,0 +1,40 @@
+// lang arrow
+@keyframes rotateLangArrow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotateLangArrowBack {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+//   back to top arrow
+@keyframes showArrow {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      display: block;
+    }
+  }
+  
+  @keyframes hideArrow {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      display: none;
+    }
+  }
+  

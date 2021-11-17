@@ -2,6 +2,13 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "animations";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 ::selection {
   background-color: cyan;
 }
@@ -29,12 +36,10 @@ a {
   width: 75%;
   margin: 0px auto;
 }
-
 .button {
   background-color: #000;
   border-radius: 9px;
 }
-
 // h1-block
 .block {
   @include position-element(55%, 12.5%, 0%, -50%);
@@ -45,13 +50,33 @@ a {
     margin: 12px 0px 34px 0px;
     font-weight: 500;
   }
+
   .block__button {
     width: 250px;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 29px 0px;
+    text-align: center;
+    padding: 30px 0px;
+
+    &:hover {
+      .block__button-link {
+        transition: 0.3s ease;
+        margin-right: 10px;
+      }
+      i {
+        transform: rotate(180deg);
+        transition: 0.3s ease;
+      }
+    }
+    :not(:hover) {
+      .block__button-link {
+        transition: 0.5s ease-in-out;
+        margin-right: 5px;
+      }
+      i {
+        transform: rotate(180deg);
+        transition: 0.5s ease;
+      }
+    }
     .block__button-link {
       text-transform: uppercase;
       color: #fff;
@@ -59,6 +84,7 @@ a {
     }
     i {
       font-size: 12px;
+      transition: 0.3s ease;
     }
   }
 }
@@ -74,3 +100,28 @@ a {
     font-size: 20x;
   }
 }
+
+// arrow back to top
+#arrow_top {
+  position: fixed;
+  bottom: 3.5%;
+  right: 2%;
+  background-color: #000;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+
+  i {
+    @include position-element(50%, 50%, -50%, -50%);
+    width: 17px;
+    color: #fff;
+  }
+}
+.hide {
+  animation: hideArrow 0.5s forwards;
+}
+.show {
+  animation: showArrow 0.5s forwards;
+}
+
+

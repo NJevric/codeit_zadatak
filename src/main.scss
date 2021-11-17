@@ -1,23 +1,2 @@
 @import "./app/assets/styles/template";
 
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-#arrow_top {
-  position: fixed;
-  bottom: 3.5%;
-  right: 2%;
-  background-color: #000;
-  border-radius: 100%;
-  width: 70px;
-  height: 70px;
-  i {
-    @include position-element(50%, 50%, -50%, -50%);
-    width: 17px;
-    color: #fff;
-  }
-}

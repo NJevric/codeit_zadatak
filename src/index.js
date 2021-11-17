@@ -1,3 +1,6 @@
+import app from "./app/app";
 import "./main.scss";
 
-console.log('test');
+app();
+
+

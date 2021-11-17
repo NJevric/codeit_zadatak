@@ -35,16 +35,14 @@
                   <a href="" class="nav__button-link">cta</a>
               </div>
               <div class="nav__lang">
-               
                 <ul class="nav__lang-list">
                    <li class="nav__lang-list-item"><img src="./app/assets/images/globe-icon.svg" alt="Languages" class="nav__lang-image"/></li>
                     <li class="nav__lang-list-item">
-                        <ul class="">
-                            <li><a href="">En</a></li>
-                            <!-- <li><a href="">Sr</a></li> -->
+                        <ul class="nav__languages">
+                            <li class="nav__language">En</li>  
                         </ul>
                     </li>
-                    <li class="nav__lang-list-item"> <i class="fas fa-chevron-down nav__lang-arrow"></i></li>
+                    <li class="nav__lang-list-item"><i class="fas fa-chevron-down nav__lang-arrow"></i></li>
                 </ul>
               </div>
           </div>
@@ -60,7 +58,17 @@
       </div>
       <div id="video">
         <div class="play">
-          <img src="app/assets/images/play-icon.svg" alt/>
+          <a href="" class="play__button-link"><img src="app/assets/images/play-icon.svg" alt="" class="play__button-image"/></a>
+        </div>
+        <div class="video">
+          <div class="shadow">
+
+          </div>
+          <video controls class="video__player">
+            <source src="./app/assets/images/video_compressed.m4v" type="video/mp4">
+            
+        
+          </video>
         </div>
       </div>
     </header>
@@ -204,8 +212,8 @@
       </div>
       
     </footer>
-    <div id="arrow_top">
-      <i class="fas fa-chevron-up"></i>
+    <div id="arrow_top" class="hide">
+      <a href="#" class="arrow__link"><i class="fas fa-chevron-up"></i></a>
     </div>
   </body>
 </html>
