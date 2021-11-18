@@ -14,3 +14,10 @@
 
   transform: translate($x, $y);
 }
+
+@mixin nav-social-hover {
+  transition: 0.3s ease;
+  &:hover {
+    color: #4c94bd;
+  }
+}

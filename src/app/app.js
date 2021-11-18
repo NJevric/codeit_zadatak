@@ -4,6 +4,7 @@ import { video } from "./utils/video";
 import { printNav } from "./utils/print-nav";
 import { carousel } from "./utils/carousel";
 import { printCarousel } from "./utils/print-carousel";
+import { printSocials } from "./utils/print-socials";
 const app = () => {
   arrow();
   changeLang();
@@ -11,7 +12,7 @@ const app = () => {
   printNav();
   printCarousel();
   carousel();
-  
+  printSocials();
 };
 
 export default app;

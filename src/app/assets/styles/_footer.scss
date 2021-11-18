@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 .footer {
   border-radius: 20px 20px 0px 0px;
   background-color: $footer-background;
@@ -28,7 +29,7 @@
       iframe {
         width: 55vw;
         height: 300px;
-        border-radius: 9px;
+        border-radius: $borderRadius;
       }
     }
   }
@@ -43,6 +44,7 @@
         .footer__links-list-item-link {
           color: #fff;
           padding-right: 40px;
+          @include nav-social-hover;
           &:last-of-type {
             margin-right: 0px;
           }
@@ -61,6 +63,7 @@
   .footer__social {
     a {
       margin-right: 40px;
+      @include nav-social-hover;
       &:last-of-type {
         margin-right: 0px;
       }

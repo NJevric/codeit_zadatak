@@ -38,7 +38,7 @@ a {
 }
 .button {
   background-color: #141d29;
-  border-radius: 9px;
+  border-radius: $borderRadius;
 }
 // h1-block
 .block {
@@ -111,7 +111,6 @@ a {
   border-radius: 100%;
   width: 70px;
   height: 70px;
-
   i {
     @include position-element(50%, 50%, -50%, -50%);
     width: 17px;
