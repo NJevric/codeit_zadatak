@@ -10,7 +10,7 @@
   scroll-behavior: smooth;
 }
 ::selection {
-  background-color: cyan;
+  background-color: rgba($color: #141D29, $alpha: .4);
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -29,7 +29,7 @@ li {
   list-style: none;
 }
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .wrapper {
@@ -44,7 +44,7 @@ a {
 .block {
   @include position-element(55%, 12.5%, 0%, -50%);
   width: 32%;
-
+  color:#fff;
   .block__desc {
     font-size: 24px;
     margin: 12px 0px 34px 0px;
@@ -97,7 +97,8 @@ a {
   p {
     margin-left: auto;
     width: 35%;
-    font-size: 20x;
+    font-size: 20px;
+
   }
 }
 
@@ -110,11 +111,12 @@ a {
   border-radius: 100%;
   width: 70px;
   height: 70px;
-
+  
   i {
     @include position-element(50%, 50%, -50%, -50%);
     width: 17px;
     color: #fff;
+    margin-left: 2px;
   }
 }
 .hide {

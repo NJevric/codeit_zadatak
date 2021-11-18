@@ -8,6 +8,6 @@ module.exports = merge(common, {
   output: {
     filename: "[name].min.js",
     path: path.resolve(__dirname, "build"),
-    assetModuleFilename: "images/[hash][ext][query]",
+    assetModuleFilename: "images/[name][ext][query]",
   }
 });

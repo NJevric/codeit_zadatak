@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,63 +12,85 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <header>
       <nav class="nav">
         <div class="nav__logo">
-            <i class="fas fa-adjust"></i>
+          <!-- <img src="./app/assets/images/logo.jpg" alt="Hexa Protocol" class="nav__logo-image"/> -->
+          <i class="fab fa-xing nav__logo-image"></i>
+          <a href="index.html" class="nav__logo-text">Hexa</a>
         </div>
 
-          <div class="nav__links">
-              <ul class="nav__list">
-                <li class="nav__list-link"><a href="">Item1</a></li>
-                <li class="nav__list-link"><a href="">Item1</a></li>
-                <li class="nav__list-link"><a href="">Item1</a></li>
-                <li class="nav__list-link"><a href="">Item1</a></li>
-                <li class="nav__list-link"><a href="">Item1</a></li>
-                <li class="nav__list-link"><a href="">Item1</a></li>
-              </ul>
-              <div class=" button nav__button ">
-                  <a href="" class="nav__button-link">cta</a>
-              </div>
-              <div class="nav__lang">
-                <ul class="nav__lang-list">
-                   <li class="nav__lang-list-item"><img src="./app/assets/images/globe-icon.svg" alt="Languages" class="nav__lang-image"/></li>
-                    <li class="nav__lang-list-item">
-                        <ul class="nav__languages">
-                            <li class="nav__language">En</li>  
-                        </ul>
-                    </li>
-                    <li class="nav__lang-list-item"><i class="fas fa-chevron-down nav__lang-arrow"></i></li>
-                </ul>
-              </div>
+        <div class="nav__links">
+          <ul class="nav__list">
+            <!-- nav print -->
+          </ul>
+          <div class="nav__button">
+            <a href="#" class="nav__button-link button">Build</a>
           </div>
-        </ul>
+          <div class="nav__lang">
+            <ul class="nav__lang-list">
+              <li class="nav__lang-list-item">
+                <img
+                  src="./app/assets/images/globe-icon.svg"
+                  alt="Languages"
+                  class="nav__lang-image"
+                />
+              </li>
+              <li class="nav__lang-list-item">
+                <ul class="nav__languages">
+                  <!-- nav print -->
+                </ul>
+              </li>
+              <li class="nav__lang-list-item">
+                <i class="fas fa-chevron-down nav__lang-arrow"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <div class="block wrapper">
-        <h1 class="block__headline">Heading</h1>
-        <p class="block__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+        <h1 class="block__headline">Hexa Protocol</h1>
+        <p class="block__desc">
+          Hexa is an ever-expanding ecosystem of interconnected apps and
+          services, built for a decentralized future.
+        </p>
         <div class="button block__button">
-          <a href="" class="block__button-link">cta</a>
+          <a href="" class="block__button-link">Learn more</a>
           <i class="fas fa-arrow-right"></i>
         </div>
       </div>
       <div id="video">
         <div class="play">
-          <a href="" class="play__button-link"><img src="app/assets/images/play-icon.svg" alt="" class="play__button-image"/></a>
+          <a href="" class="play__button-link"
+            ><img
+              src="./app/assets/images/play-icon.svg"
+              alt=""
+              class="play__button-image"
+          /></a>
         </div>
         <div class="video">
-          <div class="shadow">
-
-          </div>
-          <video controls class="video__player">
-            <source src="./app/assets/images/video_compressed.m4v" type="video/mp4">
-            
-        
+          <div class="shadow"></div>
+          <video
+            controls=""
+            autoplay="autoplay"
+            loop=""
+            muted=""
+            class="video__player"
+          >
+            <source src="./app/assets/images/video.m4v" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -76,129 +99,146 @@
       <section id="logo">
         <div class="wrapper">
           <div class="h2__block">
-            <h2>Logo section</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <h2>Announced partners</h2>
+            <p>
+              Created in collaboration with our partners, early adopters and
+              co-creators defines a new digital ecosystem.
+            </p>
           </div>
           <div class="carousel">
-            <div class="carousel__arrow left">
-              <img src="./app/assets/images/angle-left-icon.svg" alt="">
-            </div>
-            <div class="carousel__arrow right">
-              <img src="./app/assets/images/angle-left-icon.svg" alt="">
-            </div>
             <div class="carousel__images">
-              <div class="carousel__img">
-
-              </div>
-              <div class="carousel__img">
-                
-              </div>
-              <div class="carousel__img">
-                
-              </div>
-              <div class="carousel__img">
-                
-              </div>
-              <div class="carousel__img">
-                
-              </div>
-            </div>
-            
-            <div class="carousel__circles">
-              <div class="carousel__circle"></div>
-              <div class="carousel__circle"></div>
-              <div class="carousel__circle carousel__circle--active"></div>
-              <div class="carousel__circle"></div>
+              <div class="carousel__img">your content</div>
+              <div class="carousel__img">your content</div>
+              <div class="carousel__img">your content</div>
+              <div class="carousel__img">your content</div>
+              <div class="carousel__img">your content</div>
+              <div class="carousel__img">your content</div>
             </div>
           </div>
         </div>
-       
       </section>
       <section id="news">
         <div class="wrapper news">
           <div class="h2__block">
-            <h2>News section</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <h2>Enter the Hexa</h2>
+            <p>
+              In return for securing the services on the Hexa Hub, transaction
+              fees and staking rewards are distributed to Hexa stakers.
+            </p>
           </div>
           <div class="articles">
             <article class="news__article">
-              <div class="article__img"></div>
+              <div class="article__img">
+                <img src="./app/assets/images/tech.jpg" alt="" />
+              </div>
               <div class="article__date-time">
                 <p class="date">09.05.2021</p>
                 <div class="article__date-time-line"></div>
-                <p class="time">2 min read</p>
+                <p class="category">Learn</p>
               </div>
-              <p class="article__desc">LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR</p>
-              <div class="button article__button">
-                <a href="" class="article__button-link">cta</a>
+              <p class="article__desc">
+                Read the vision of Hexa and learn about the powerful technology
+              </p>
+              <div class="article__button">
+                <a href="" class="article__button-link button">cta</a>
               </div>
             </article>
             <article class="news__article">
-              <div class="article__img"></div>
+              <div class="article__img">
+                <img src="./app/assets/images/hub.jpg" alt="" />
+              </div>
               <div class="article__date-time">
                 <p class="date">09.05.2021</p>
                 <div class="article__date-time-line"></div>
-                <p class="time">2 min read</p>
+                <p class="category">Stake</p>
               </div>
-              <p class="article__desc">LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR</p>
-              <div class="button article__button">
-                <a href="" class="article__button-link">cta</a>
+              <p class="article__desc">
+                Grow the economy of your chain by connecting to Hexa Hub
+              </p>
+              <div class="article__button">
+                <a href="" class="article__button-link button">cta</a>
               </div>
             </article>
             <article class="news__article">
-              <div class="article__img"></div>
+              <div class="article__img">
+                <img src="./app/assets/images/explore.jpg" alt="" />
+              </div>
               <div class="article__date-time">
                 <p class="date">09.05.2021</p>
                 <div class="article__date-time-line"></div>
-                <p class="time">2 min read</p>
+                <p class="category">Explore</p>
               </div>
-              <p class="article__desc">LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCING ELITR</p>
-              <div class="button article__button">
-                <a href="" class="article__button-link">cta</a>
+              <p class="article__desc">
+                Browse the ever-expanding, diverse collection of apps
+              </p>
+              <div class="article__button">
+                <a href="" class="article__button-link button">cta</a>
               </div>
             </article>
           </div>
-         
         </div>
-        
       </section>
       <section id="about">
         <div class="wrapper">
           <div class="block about__text">
-            <h1 class="block__headline">Heading</h1>
-            <p class="block__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+            <h1 class="block__headline">Join the network</h1>
+            <p class="block__desc">
+              Developers in Hexa are the pioneers of the new era of blockchain
+              technology. Join a fast-growing token economy and build upon a
+              secure and stable foundation.
+            </p>
             <div class="button block__button">
-              <a href="" class="block__button-link">cta</a>
-            <i class="fas fa-arrow-right"></i>
+              <a href="" class="block__button-link">Start staking</a>
+              <i class="fas fa-arrow-right"></i>
             </div>
           </div>
           <div class="about__img">
-            <div class="img"></div>
+            <div class="img">
+              <img
+                src="./app/assets/images/hexa_company.jpg"
+                alt="Hexa Company"
+              />
+            </div>
           </div>
         </div>
-        
       </section>
     </main>
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__info">
           <div class="footer__info-text">
-            <i class="fas fa-adjust footer__logo"></i>
-            <p class="footer__company-name">Company Name</p>
+            <i class="fab fa-xing"></i>
+            <p class="footer__company-name">Hexa protocol</p>
             <a href="#" class="footer_address">Address 123, City</a>
           </div>
           <div class="footer__info-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3146077694832!2d20.461710915535836!3d44.815154979098594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7ab1be8e7f35%3A0x8ecb406449595234!2z0J3Rg9GI0LjRm9C10LLQsCAyNSwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1637077599433!5m2!1ssr!2srs" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3146077694832!2d20.461710915535836!3d44.815154979098594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7ab1be8e7f35%3A0x8ecb406449595234!2z0J3Rg9GI0LjRm9C10LLQsCAyNSwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1637077599433!5m2!1ssr!2srs"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
         <div class="footer__links">
           <ul class="footer__links-list">
-            <li class="footer__links-list-item"><a href=""  class="footer__links-list-item-link">Item1</a></li>
-            <li class="footer__links-list-item"><a href=""  class="footer__links-list-item-link">Item1</a></li>
-            <li class="footer__links-list-item"><a href=""  class="footer__links-list-item-link">Item1</a></li>
-            <li class="footer__links-list-item"><a href=""  class="footer__links-list-item-link">Item1</a></li>
-            <li class="footer__links-list-item"><a href=""  class="footer__links-list-item-link">Item1</a></li>
-            <li class="footer__links-list-item"><a href=""  class="footer__links-list-item-link">Item1</a></li>
+            <li class="footer__links-list-item">
+              <a href="" class="footer__links-list-item-link">Item1</a>
+            </li>
+            <li class="footer__links-list-item">
+              <a href="" class="footer__links-list-item-link">Item1</a>
+            </li>
+            <li class="footer__links-list-item">
+              <a href="" class="footer__links-list-item-link">Item1</a>
+            </li>
+            <li class="footer__links-list-item">
+              <a href="" class="footer__links-list-item-link">Item1</a>
+            </li>
+            <li class="footer__links-list-item">
+              <a href="" class="footer__links-list-item-link">Item1</a>
+            </li>
+            <li class="footer__links-list-item">
+              <a href="" class="footer__links-list-item-link">Item1</a>
+            </li>
           </ul>
         </div>
         <div class="footer__line"></div>
@@ -208,12 +248,25 @@
           <i class="fab fa-instagram"></i>
           <i class="fab fa-instagram"></i>
         </div>
-        <small class="footer__copy">Copyright &copy; 2021</small>
+        <small class="footer__copy">Copyright © 2021</small>
       </div>
-      
     </footer>
+
     <div id="arrow_top" class="hide">
       <a href="#" class="arrow__link"><i class="fas fa-chevron-up"></i></a>
     </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>

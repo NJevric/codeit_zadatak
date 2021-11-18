@@ -1,2 +1,9 @@
 @import "./app/assets/styles/template";
 
+header{
+    background-image: url('./app/assets/images/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
