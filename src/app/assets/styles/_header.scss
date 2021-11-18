@@ -102,9 +102,15 @@ header {
       }
     }
   }
+  .nav-responsive{
+    display: none;
+    position: relative;
+    .links{
 
-  .play {
-    @include position-element(55%, 50%, -50%, -50%);
+      color:#fff;
+    }
+    color:#fff;
     z-index: 101;
   }
+ 
 }
