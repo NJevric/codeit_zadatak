@@ -3,6 +3,7 @@
 @import "main";
 @import "footer";
 @import "animations";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -18,7 +19,7 @@ body {
 }
 h1 {
   font-size: 70px;
-
+  line-height: 1.2;
   font-weight: 900;
 }
 h2 {
@@ -124,3 +125,4 @@ a {
 .show {
   animation: showArrow 0.5s forwards;
 }
+@import "responsive";

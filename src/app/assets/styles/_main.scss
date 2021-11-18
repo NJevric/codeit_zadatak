@@ -109,18 +109,18 @@ main {
           align-items: center;
           margin: 22px auto;
           margin-top: -98px;
-  
+
           .article__date-time-line {
             height: 15px;
             width: 1px;
             margin: 0px 7px;
             background-color: #000;
           }
-          .category{
-            color:#141d29;
+          .category {
+            color: #141d29;
           }
         }
-        
+
         .article__desc {
           width: 80%;
           margin: auto;
@@ -162,27 +162,24 @@ main {
   #about {
     padding: 100px 0px;
     background-color: rgba($color: #dde1e2, $alpha: 0.7);
-    position: relative;
     min-height: 60vh;
 
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     h1,
     p {
       color: #141d29;
     }
     .about__text {
-      top: 50%;
+      position: static;
+      transform: translate(0%);
+      width: 40%;
     }
     .about__img {
-      width: 50%;
-      margin-left: auto;
-
       .img {
-        width: 540px;
-        height: 540px;
-        margin-left: auto;
-        border-radius: $borderRadius;
-        background-color: #dde1e2;
-
         img {
           border-radius: $borderRadius;
         }
