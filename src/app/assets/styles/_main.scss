@@ -76,16 +76,12 @@ main {
         transition: 0.5s ease;
 
         &:hover {
-          background-color: #1b2737;
-          color: #fff;
           .article__img {
-            transform: scale(1.05);
+            transform: scale(1.07);
           }
           .article__button {
             a {
               transition: 0.3s ease;
-              color: #fff;
-              border: 2px solid #fff;
             }
           }
         }
@@ -113,13 +109,18 @@ main {
           align-items: center;
           margin: 22px auto;
           margin-top: -98px;
+  
           .article__date-time-line {
             height: 15px;
             width: 1px;
             margin: 0px 7px;
-            background-color: red;
+            background-color: #000;
+          }
+          .category{
+            color:#141d29;
           }
         }
+        
         .article__desc {
           width: 80%;
           margin: auto;

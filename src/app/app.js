@@ -5,6 +5,7 @@ import { printNav } from "./utils/print-nav";
 import { carousel } from "./utils/carousel";
 import { printCarousel } from "./utils/print-carousel";
 import { printSocials } from "./utils/print-socials";
+import { printArticles } from "./utils/print-articles";
 const app = () => {
   arrow();
   changeLang();
@@ -13,6 +14,7 @@ const app = () => {
   printCarousel();
   carousel();
   printSocials();
+  printArticles();
 };
 
 export default app;

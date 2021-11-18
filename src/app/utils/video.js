@@ -1,14 +1,19 @@
 export const video = () => {
-  const showVideo = document.querySelector(".play__button-link");
-  const videoBlock = document.querySelector(".video");
-  const videoShadow = document.querySelector(".shadow");
+  const play = document.querySelector(".play__button-link");
+  const media = document.querySelector('video');
 
-  console.log(showVideo);
-  showVideo.addEventListener("click", (e) => {
+
+  play.addEventListener('click', (e)=>{
     e.preventDefault();
-    videoBlock.classList.add("video--show");
+    console.log('aaa');
+    playPauseMedia();
   });
-  videoShadow.addEventListener("click", () => {
-    videoBlock.classList.remove("video--show");
-  });
+  function playPauseMedia() {
+
+    if(media.paused) {
+      media.play();
+    } else {
+      media.pause();
+    }
+  }
 };
