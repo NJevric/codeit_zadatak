@@ -24,14 +24,7 @@
         color: #fff;
       }
     }
-    .footer__info-map {
-      filter: grayscale(100%);
-      iframe {
-        width: 55vw;
-        height: 300px;
-        border-radius: $borderRadius;
-      }
-    }
+   
   }
   .footer__links-list,
   .footer__social {
