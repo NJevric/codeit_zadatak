@@ -33,57 +33,57 @@ export const printCarousel = () => {
       src: "partner_logo.jpg",
       alt: "Partner",
     },
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
 
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
 
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
 
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
 
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
 
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
 
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
 
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
-    // {
-    //   src: "partner_logo.jpg",
-    //   alt: "Partner",
-    // },
-    // {
-    //     src: 'partner_logo.jpg',
-    //     alt: 'Partner'
-    // }
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
+    {
+      src: "partner_logo.jpg",
+      alt: "Partner",
+    },
+    {
+        src: 'partner_logo.jpg',
+        alt: 'Partner'
+    }
   ];
   const carouselBlock = document.querySelector(".carousel__images");
   images.forEach((image) => {

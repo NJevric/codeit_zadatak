@@ -9,8 +9,9 @@ const app = () => {
   changeLang();
   video();
   printNav();
+  printCarousel();
   carousel();
-  // printCarousel();
+  
 };
 
 export default app;

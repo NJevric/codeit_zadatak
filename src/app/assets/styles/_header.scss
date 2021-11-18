@@ -14,7 +14,12 @@ header {
     padding: 50px 0px;
 
     .nav__logo {
-      font-size: 75px;
+      font-size: 50px;
+      margin:12.5px 0px;
+      .nav__logo-image{
+        color:#fff;
+        
+      }
     }
     .nav__links {
       font-size: 18px;
@@ -28,26 +33,33 @@ header {
 
         .nav__list-link {
           margin-right: 40px;
+          a{
+            transition: .3s ease;
+            &:hover{
+              color: #4C94BD;
+            }
+          }
+         
           &:last-of-type {
             margin-right: 0px;
           }
         }
       }
       .nav__button {
-        
-      
-
         .nav__button-link {
           padding: 16px 32px;
           margin: 0px 40px 0px 40px;
           color: #fff;
           text-transform: uppercase;
+          transition: .3s ease;
+          &:hover{
+            background-color: #0D131C;
+          }
         }
       }
       .nav__lang {
         .nav__lang-list {
           display: flex;
-          // align-items: center;
           text-transform: uppercase;
 
           .nav__lang-list-item {
@@ -64,7 +76,6 @@ header {
               font-size: 10px;
             }
             .nav__languages {
-              
               .nav__language {
                 width: 25px;
                 color: #fff;

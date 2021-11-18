@@ -4,43 +4,36 @@ main {
     margin-bottom: 150px;
     .carousel {
       position: relative;
-      margin:0px -30px 0px -10px;
-      // .left {
-      //   @include pos-3tion-elem1nt(50%, -7%, 0%, -75%);
-      // }
-      // .right {
-      //   @include position-element-right(50%, -7%, 0%, -75%);
-      //   img {
-      //     transform: rotate(180deg);
-      //   }
-      // }
+      margin: 0px -30px 0px -10px;
+
       .carousel__images {
-        // margin-bottom: 40px;
-        // display: flex;
-        .slick-prev{
-          @include position-element(50%, -7%, 0%, -75%);
-          transition: .4s ease;
+        .slick-prev {
+          @include position-element(45%, -7%, 0%, -75%);
+          transition: 0.4s ease;
           border-radius: 100%;
 
-          &:hover{
+          &:hover {
             box-shadow: 0px 8px 20px #00000029;
           }
         }
-        .slick-next{
-          transition: .4s ease;
+        .slick-next {
+          transition: 0.4s ease;
           border-radius: 100%;
-          @include position-element-right(30%, -7%, 0%, 0%);
+          @include position-element-right(25%, -7%, 0%, 0%);
           transform: rotate(180deg);
-          &:hover{
+          &:hover {
             box-shadow: 0px -8px 20px #00000029;
           }
         }
-        .carousel__img {
-          width: 100%;
-          height: 175px;
-          background-color: #bbbbbc;
-          margin:0px 10px;
+        .slick-slide {
+          margin: 0px 10px;
+          .carousel__img {
+            width: 100%;
+            height: 175px;
+            background-color: #bbbbbc;
+          }
         }
+
         .slick-dots {
           margin-top: 40px;
           display: flex;
@@ -75,21 +68,22 @@ main {
       justify-content: center;
       .news__article {
         background-color: rgba($color: #545c62, $alpha: 0.08);
-
+        width: 100%;
         border-radius: 10px;
         &:nth-of-type(2) {
           margin: 0px 32px;
         }
         .article__img {
           position: relative;
+          margin:0px auto;
+          text-align: center;
+          display: flex;
           top: -120px;
           box-shadow: 0px 8px 20px #00000029;
           background-color: #bbbbbc;
           width: 94%;
-
           height: 240px;
           border-radius: 20px;
-          margin: 0px auto;
         }
         .article__date-time {
           width: 80%;
@@ -110,23 +104,32 @@ main {
           width: 80%;
           margin: auto;
           font-size: 26px;
-          font-weight: 600;
+          font-weight: 800;
           margin-bottom: 32px;
           line-height: 1.4;
+          text-transform: uppercase;
+          padding-bottom: 25px;
         }
         .article__button {
           width: 80%;
           margin: 0px auto;
-          padding: 10px 0px;
           margin-bottom: 32px;
-          border: 2px solid #000;
-          background-color: transparent;
           .article__button-link {
+            border: 2px solid #000;
+            background-color: transparent;
+            color: #000;
+            padding: 10px 0px;
             font-weight: 600;
             text-transform: uppercase;
             font-size: 20px;
             display: flex;
             justify-content: center;
+            transition: .4s ease;
+            &:hover{
+              background-color: #141D29;
+              color:#fff;
+              border:2px solid transparent;
+            }
           }
         }
       }
@@ -138,6 +141,9 @@ main {
     background-color: rgba($color: #dde1e2, $alpha: 0.7);
     position: relative;
     min-height: 60vh;
+    h1,p{
+      color:#141D29;
+    }
     .about__text {
       top: 50%;
     }
